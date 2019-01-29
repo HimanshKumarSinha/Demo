@@ -20,6 +20,7 @@ namespace JsonToXmlConversion
             doc.LoadXml(xml);
            string json = JsonConvert.SerializeXmlNode(doc);
             Console.WriteLine(json);
+             Console.WriteLine("We have both Xml-to-Json and Json-to-Xml code);
             Console.ReadLine();
 
         }
