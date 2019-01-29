@@ -19,6 +19,9 @@ namespace JsonToXmlConversion
             XmlDocument doc = new XmlDocument();
             doc.LoadXml(xml);
            string json = JsonConvert.SerializeXmlNode(doc);
+            //Json to Xml convertion lofin
+            XmlDocument doc = JsonConvert.DeserializeXmlNode(json);
+            Console.WriteLine(doc); 
             Console.WriteLine(json);
              Console.WriteLine("We have both Xml-to-Json and Json-to-Xml code);
             Console.ReadLine();
